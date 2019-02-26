@@ -1,0 +1,19 @@
+body{
+	box-sizing: border-box;
+
+}
+
+.img-thumbnail{
+	width: 100px;
+}
+
+.footer {
+	background-color: #343A40;
+	padding: 5px;
+}
+
+@media (max-width: 728px){
+	img{
+		display: none;
+	}
+}
