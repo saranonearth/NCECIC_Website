@@ -1,8 +1,19 @@
 # NCICEC_Website
 
-*** Running the website locally ***
+PRIVATE Website for NCICEC'19 event.
 
--Just Clone the Repository 
--Got the directory using command line or "GitBash Here"
--run command -> python -m http.server 8000
--search for "localhost" in browser
+## Running the website locally
+
+
+### `Clone the Repository` 
+
+
+### `Go to the respective directory using command line or "GitBash Here"`
+
+
+### `run command -> python -m http.server 8000`
+
+
+### `search for "localhost" in browser`
+
+
