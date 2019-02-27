@@ -4,14 +4,20 @@ body{
 
 }
 
-
-
 .footer {
 	background-color: #343A40;
 	padding: 5px;
 
 }
 
+.block {
+	background-color: #E9ECEF;
+	margin-top: 2px;
+	padding: 15px;
+}
+.block:hover {
+	background-color:#CDCECE ;
+}
 
 
 #selected {
