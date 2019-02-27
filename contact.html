@@ -9,15 +9,26 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <style>
+   #title {
+      margin-top:30px;
+      font-size: 3.5em;
+    }
     .title {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+
+  }
+  .jumbotron {
+    margin: 0;
   }
     .footer {
       background-color: #343A40;
       padding: 5px;
       }
     .cont {
-      margin-top: 20px;
+      margin-top: 10px;
     }
     #selected {
       color: white;
@@ -30,7 +41,7 @@
       text-align: center;
       font-weight: 500;
       font-size: 2rem;
-     
+
     }
     #reach {
      max-width: 100%;
@@ -45,10 +56,10 @@
     ul {
       padding: 0;
     }
-    @media (max-width:720px){
-      #reached {
-        max-width: 
-      }
+    #imgReach {
+      width: 100%;
+      height: auto;
+    }
     }
   </style>
 
@@ -112,16 +123,16 @@
 
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-2 text-center" id="title">NCECIC'19</h1>
+    <h1 class=" text-center" id="title">NCECIC'19</h1>
     <p class="lead text-center">This is a modified jumbnotron that occupies the entire horizontal space of its parent.</p>
   </div>
 </div>
 
        <div class="container cont">
-         <h1 class="title">Contact</h1>
+         <h1 class="title text-center "><kbd>Contact</kbd></h1>
 
          <div class="row">
-           <div class="col">
+           <div class="col-md-8 col-xs-12">
               <img src="https://via.placeholder.com/250x250?text=org-logo" class="rounded mx-auto d-block" alt="...">
               
              <ul>
@@ -135,17 +146,20 @@
                <li>website url</li>
              </ul>
            </div>
+           <div class="col-md-4 col-xs-12">
+             <img src="./assets/Reach.jpg" alt="ReachNITKKR" id="imgReach">
+           </div>
          </div>
        </div>
 
 
 
     <div class="container">
-      <h1 class="title">Organised By</h1>
+      <h1 class="title text-center"><kbd>Organised By</kbd></h1>
       <ul class="text-center">
-        <li>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</li>
+        <li class="heading">NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</li>
         <li>In Association with </li>
-        <li class="sub-text">Lorem ipsum dolor sit.</li>
+        <li class="sub-text"><span class="heading">Lorem ipsum dolor sit.</span></li>
         <li class="sub-text">Lorem ipsum | Lorem ipsum | Lorem ipsum</li>
       </ul>
 
