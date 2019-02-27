@@ -1,19 +1,26 @@
 body{
 	box-sizing: border-box;
 
+
 }
 
-.img-thumbnail{
-	width: 100px;
-}
+
 
 .footer {
 	background-color: #343A40;
 	padding: 5px;
+
 }
 
+
+
+#selected {
+	 		color: white;
+	 	}
+
 @media (max-width: 728px){
-	img{
-		display: none;
+	#title {
+		margin-top: 10px;
+		font-size: 4.3em;
 	}
 }
