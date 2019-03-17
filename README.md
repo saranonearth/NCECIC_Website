@@ -1,4 +1,4 @@
 # NCICEC_Website
 
-Custom Wordpress template for NCICEC'19 event.
+Website for NCICEC'19 event.
 
