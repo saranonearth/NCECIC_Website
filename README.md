@@ -1,4 +1,5 @@
 # NCICEC_Website
 
-Website for NCICEC'19 event.
+Website for the NCICEC'19 event.
 
+    
