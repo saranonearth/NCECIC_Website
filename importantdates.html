@@ -33,12 +33,7 @@
       .sub-text{
       font-size: 1.2rem;
     }
-    .container li:nth-child(1){
-      text-align: center;
-      font-weight: 500;
-      font-size: 2rem;
 
-    }
     .navbar-dark .navbar-brand {
       color: #03c9a9 !important;
     }
@@ -76,6 +71,11 @@ tr{
     text-indent: 20px;
     font-weight:500;
 }
+@media (max-width:768px){
+  table td {
+    font-size: 15px;
+  }
+}
 </style>
 
 <body>
@@ -93,7 +93,7 @@ tr{
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav" style="text-align: center;">
 
-        <li class="nav-item">
+        <li class="nav-item" >
           <a class="nav-link" href="index.html">Home</a>
         </li>
 
@@ -223,13 +223,10 @@ tr{
   </div>
 
 
-  <br>
-  <br>
-  <br>
-  <br><br><hr>
+  <br><hr>
        <div class="container">
         <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
-        <ul class="text-center" style="padding:0;">
+        <ul class="text-center" style="padding:0; list-style: none">
           <li><a href="http://www.nitkkr.ac.in/" target="_blank" style="cursor: pointer; color:#23232e;"><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a></li>
           <li>Under the aegis of </li>
       <li class="heading"><a href="http://www.combustioninstitute-indiansection.com/"  target="_blank" style="cursor: pointer; color:#23232e;"><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a></li>
