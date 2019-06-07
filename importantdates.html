@@ -8,12 +8,9 @@
   <title>NCICEC'19</title>
   <!-- css -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
- 
+  <link rel="stylesheet" href="./css/home.css">
 </head>
 <style>
-   .card-header{
-      padding:0;
-    }
   .footer {
       background-color: #343A40;
       padding: 5px;
@@ -36,7 +33,12 @@
       .sub-text{
       font-size: 1.2rem;
     }
+    .container li:nth-child(1){
+      text-align: center;
+      font-weight: 500;
+      font-size: 2rem;
 
+    }
     .navbar-dark .navbar-brand {
       color: #03c9a9 !important;
     }
@@ -74,18 +76,6 @@ tr{
     text-indent: 20px;
     font-weight:500;
 }
-.table {
-  width: auto;
-}
-td {
-  padding: 6px !important;
-  font-size: 16px;
-}
-@media (max-width:768px){
-  table td {
-    font-size: 15px;
-  }
-}
 </style>
 
 <body>
@@ -101,9 +91,9 @@ td {
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav" style="text-align: center;">
+      <ul class="navbar-nav">
 
-        <li class="nav-item" >
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
 
@@ -128,7 +118,7 @@ td {
         <li class="nav-item">
           <a class="nav-link" href="committees.html">Committees</a>
         </li>
-        <li class="nav-item">
+			  <li class="nav-item">
           <a class="nav-link" href="CIIS.html">CIIS</a>
         </li>
         <li class="nav-item">
@@ -166,70 +156,83 @@ td {
     </div>
      </div>
   <!-- Home Content -->
-  <center>
-      <div class="card " style="width: 60%">
-          <div class="card-header bg-dark text-white">
-              <center><h2 style="color: #03c9a9 ; font-size: 1.3rem;">Important Dates</h2></center>
-    
+  <div class="container ">
+    <div id="content ">
+      <div class="container align-self-center">
+          <h2 class="resp">Important Dates</h2>
+        <!-- <div class="row">
+          <div class="span7"> -->
+            <div class="table-responsive align-items-center ">
+              <table class="table table-bordered table-hover" style="font-size:15 px">
+
+
+                <tbody>
+                  <tr>
+                    <td>
+                      Full length paper submission commences
+                    </td>
+                    <td>
+                      March 15, 2019
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Deadline for submission of full length paper
+                    </td>
+                    <td>
+                      June 15, 2019<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Notification of acceptance of full length paper
+                      <br>
+                    <td>August 31, 2019</td>
+                  </tr>
+
+                  <tr>
+                    <td>Submission of camera ready papers commences</td>
+                    <td>September 01, 2019<br>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Registration commences</td>
+                    <td>September 01, 2019<br>
+                    </td>
+
+
+                  </tr>
+
+
+
+                </tbody>
+              </table>
+            </div>
+
+
           </div>
-          <div class="card-body" style="padding: 0;">
-              <p style="text-align:justify;">
-                
-                      <table class="table table-bordered table-hover" style="font-size:15px">
-        
-        
-                        <tbody>
-                          <tr>
-                            <td>
-                              Full length paper submission commences
-                            </td>
-                            <td>
-                              March 15, 2019
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Deadline for submission of full length paper
-                            </td>
-                            <td>
-                              June 15, 2019<br>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Notification of acceptance of full length paper
-                              <br>
-                            <td>August 31, 2019</td>
-                          </tr>
-        
-                          <tr>
-                            <td>Submission of camera ready papers commences</td>
-                            <td>September 01, 2019<br>
-                            </td>
-                          </tr>
-        
-                          <tr>
-                            <td>Registration commences</td>
-                            <td>September 01, 2019<br>
-                            </td>
-        
-        
-                          </tr>
-        
-        
-        
-                        </tbody>
-                      </table>
-                    
-              </p>
-            </div></div>
-  </center>
 
 
-<hr>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br><br><hr>
        <div class="container">
         <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
-        <ul class="text-center" style="padding:0; list-style: none">
+        <ul class="text-center" style="padding:0;">
           <li><a href="http://www.nitkkr.ac.in/" target="_blank" style="cursor: pointer; color:#23232e;"><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a></li>
           <li>Under the aegis of </li>
       <li class="heading"><a href="http://www.combustioninstitute-indiansection.com/"  target="_blank" style="cursor: pointer; color:#23232e;"><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a></li>
@@ -243,7 +246,7 @@ td {
 
   </div>
   <footer>
-    <div class="footer" style="background: #23232E;">
+    <div class="footer">
       <p class="text-center" style="color: #03c9a9;">NCICEC'19 Copyrights &copy; 2019 </p>
     </div>
   </footer>
