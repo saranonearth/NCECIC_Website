@@ -1,328 +1,400 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NCICEC'19</title>
-	<!-- css -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/home.css">
-</head>
-<style>
-.title kbd {
-    color: #03c9a9;
-}
-     li{
-      list-style: none;
-      text-align: center;
-  }
-    
-      .sub-text{
-      font-size: 1.2rem;
-    }
-    .container li:nth-child(1){
-      text-align: center;
-      font-weight: 500;
-      font-size: 2rem;
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCICEC'19</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    }
-    .navbar-dark .navbar-brand {
-      color: #03c9a9 !important;
-    }
-    #title{
-      margin-top: 10px;
-      color: #03c9a9;
-    }
- .bg-dark {
-      background-color: #23232e !important;
-    }
-    .navbar-brand .navbar-dark{
-      color: #03c9a9;
-    }
-    .jumbotron{
-      background-color: #23232e !important;
-    }
-    .lead{
-      color: white;
-			font-size: 25px;
-    }
-    .figure-caption {
-      color: #212529;
-    }
-    p{
-      color: #23232e;
-    }
-    .footer {
-      background-color: #343A40;
-      padding: 5px;
+    <style>
+      .title kbd {
+        color: #03c9a9;
       }
-    #selected {
-      color: white;
-    }
-    
-    .jumbotron {
-      margin-bottom: 0;
-    }
-     .cont {
-      margin-top: 10px;
-    }
-    #selected {
-      color: white;
-    }
-    li {
-      list-style: none;
-      text-align: center;
-    }
-    .container li:nth-child(1){
-      text-align: center;
-      font-weight: 500;
-      font-size: 2rem;
+      .sub-text {
+        font-size: 1.2rem;
+      }
 
-    }
-    #reach {
-     max-width: 100%;
-     height: auto;
-    }
-    .insti-logo{
-      text-align: center;
-    }
-    .sub-text{
-      font-size: 1.2rem;
-    }
-    ul {
-      padding: 0;
-    }
-    #imgReach {
-      width: 100%;
-      height: auto;
-    }
-  h3,a {
-    color: #03c9a9;
-  }
-</style>
-<body>
+      .navbar-dark .navbar-brand {
+        color: #03c9a9 !important;
+      }
+      #title {
+        margin-top: 10px;
+        color: #03c9a9;
+      }
+      .bg-dark {
+        background-color: #23232e !important;
+      }
+      .navbar-brand .navbar-dark {
+        color: #03c9a9;
+      }
+      .jumbotron {
+        background-color: #23232e !important;
+      }
+      .lead {
+        color: white;
+        font-size: 25px;
+      }
+      .figure-caption {
+        color: #212529;
+      }
+      p {
+        color: #23232e;
+      }
+      .footer {
+        background-color: #343a40;
+        padding: 5px;
+      }
+      #selected {
+        color: white;
+      }
 
+      .jumbotron {
+        margin-bottom: 0;
+      }
+      .cont {
+        margin-top: 10px;
+      }
+      #selected {
+        color: white;
+      }
 
-                                          <!-- NavBar -->
+      #reach {
+        max-width: 100%;
+        height: auto;
+      }
+      .insti-logo {
+        text-align: center;
+      }
+      .sub-text {
+        font-size: 1.2rem;
+      }
+      ul {
+        padding: 0;
+      }
+      #imgReach {
+        width: 100%;
+        height: auto;
+      }
+      h3,
+      a {
+        color: #03c9a9;
+      }
 
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">NCICEC'19</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      .block {
+        background-color: #e9ecef;
+        margin-top: 2px;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .block:hover {
+        background-color: #cdcece;
+      }
+      h5 {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NavBar -->
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">NCICEC'19</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <li class="nav-item">
-        <a class="nav-link" href="index.html" >Home</a>
-      </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="importantdates.html">Important Dates</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="venue.html">Venue</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="papersub.html">Paper Submission</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="registration.html">Registration</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="speakers.html">Plenary Speakers</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="sponsor.html">Sponsors</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="committees.html" id="selected">Committees</a>
-      </li>
-	  	  <li class="nav-item">
-          <a class="nav-link" href="CIIS.html">CIIS</a>
-        </li>
-       <li class="nav-item">
-        <a class="nav-link" href="downloads.html">Downloads</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+          <li class="nav-item">
+            <a class="nav-link" href="importantdates.html">Important Dates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="venue.html">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="papersub.html">Paper Submission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="speakers.html">Plenary Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsor.html" id="selected">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="committees.html">Committees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CIIS.html">CIIS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="downloads.html">Downloads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-                                                 <!-- Hero Img -->
+    <!-- Hero Img -->
 
-												 <div class="jumbotron jumbotron-fluid">
-												   <br><br>
-												   <div class="container">
-													 <div class="row" style="margin-bottom:-4%;">
-													   <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-														 <center> <img src="assets/ciis2.png" width=150em></center>
-													   </div>
-													   <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
-														 <h3 class="text-center" id="title">National Conference on Internal Combustion Engines and
-														 Combustion</h3><center><span style="color:white; font-size:20px;">November 1-4 <span style="color:#03c9a9;">|</span> 2019</span></center>
-														 <h4 class="text-center" id="title" style="color:white;">National Institute of Technology Kurukshetra <span style="color:#03c9a9;">|</span> India</h4>
-													   </div>
+    <div class="jumbotron jumbotron-fluid">
+      <br /><br />
+      <div class="container">
+        <div class="row" style="margin-bottom:-4%;">
+          <div class="col-md-2 col-xs-2" style="margin-top: -3%;">
+            <center><img src="assets/ciis2.png" width="150em" /></center>
+          </div>
+          <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
+            <h3 class="text-center" id="title">
+              National Conference on Internal Combustion Engines and Combustion
+            </h3>
+            <center>
+              <span style="color:white; font-size:20px;"
+                >November 1-4 <span style="color:#03c9a9;">|</span> 2019</span
+              >
+            </center>
+            <h4 class="text-center" id="title" style="color:white;">
+              National Institute of Technology Kurukshetra
+              <span style="color:#03c9a9;">|</span> India
+            </h4>
+          </div>
 
-													   <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-														 <center> <img src="assets/kkrlogo.png" width=150em></center>
-													   </div>
-													 </div>
-												   </div>
-													</div>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark " >
-<div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex;
-  justify-content: space-around;">
-<ul class="navbar-nav" >
-
-  <li class="nav-item">
-    <a class="nav-link" href="committees.html" id="selected">Steering Committee</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="committees1.html" >Technical Review Committee</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="committees2.html">Advisory Committee</a>
-  </li>
-</ul>
-</div>
-</nav>                                             <!-- Home Content -->
-<br><br>
-<div class="container">
-	<div class="card">
-		<div class="card-header bg-dark text-white"><center><h3>CHIEF PATRON</h3></center></div>
-		<div class="card-body">
-    <div class="row">
-		<div class="col-md-4 col-xs-4 col-sm-4">
-
+          <div class="col-md-2 col-xs-2" style="margin-top: -3%;">
+            <center><img src="assets/kkrlogo.png" width="150em" /></center>
+          </div>
         </div>
-        <div class="col-md-4 col-xs-4 col-sm-4">
-			<center><figure class="figure">
-			    <img src="assets/vks2.jpg" width=50% class="rounded-circle">
-			    <figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. VK Saraswat</span><br>Member | NITI Ayog | Govt. of India<br> Chairman | CIIS</b></figcaption>
-			</figure></center></div>
-			<div class="col-md-4 col-xs-4 col-sm-4">
-
-	        </div>
-        </div>
+      </div>
     </div>
-</div>
-<br>
-<div class="card">
-	<div class="card-header bg-dark text-white"><center><h3>PATRON</h3></center></div>
-	<div class="card-body">
-<div class="row">
-	<div class="col-md-4 col-xs-4 col-sm-4">
 
-	</div>
-	<div class="col-md-4 col-xs-4 col-sm-4">
-		<center><figure class="figure">
-			<img src="assets/direc.jpg" width=50% class="rounded-circle">
-			<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Satish Kumar</span><br>Director<br>NIT Kurukshetra</b></figcaption>
-		</figure></center></div>
-		<div class="col-md-4 col-xs-4 col-sm-4">
-
+    <!-- Content -->
+    <div class="container" style="margin-top:20px">
+      <div class="row text-center">
+        <div class="col">
+          <div class="card">
+            <div class="card-header bg-dark text-white" style="padding:0;padding-top:5px">
+              <center><h3 style="font-size: 16px">CHIEF PATRON</h3></center>
+            </div>
+            <div class="card-body"style="height:245px">
+        
+                  <center>
+                <div class="col-md-9 col-xs-4 col-sm-4">
+                  <center>
+                    <figure class="figure">
+                      <img
+                        src="assets/vks2.jpg"
+                        width="50%"
+                        class="rounded-circle"
+                      />
+                      <figcaption class="figure-caption">
+                        <b
+                          ><span style="color:black; font-size:15px;"
+                            ><b>Dr. VK Saraswat</b></span
+                          ><br />Member | NITI Ayog | <br>Govt. of India
+                          Chairman | CIIS</b
+                        >
+                      </figcaption>
+                    </figure>
+                  </center>
+                </div>
+             
+            </div>
+          </div>
         </div>
-	</div>
-</div>
-</div>
-<br>
-<div class="card">
-	<div class="card-header bg-dark text-white"><h3><center>ORGANIZING CHAIR</center></h3> </div>
-	<div class="card-body">
-    <div class="row">
-        <div class="col-md-4 col-xs-4 col-sm-4">
-
+        <div class="col">
+          <div class="card">
+            <div class="card-header bg-dark text-white" style="padding:0;padding-top:5px">
+              <center><h3 style="font-size: 16px">Patron</h3></center>
+            </div>
+            <div class="card-body" style="height:245px">
+                <center>
+                <div class="col-md-9 col-xs-4 col-sm-4">
+                  <center>
+                    <figure class="figure">
+                      <img
+                        src="assets/direc.jpg"
+                        width="50%"
+                        class="rounded-circle"
+                      />
+                      <figcaption class="figure-caption">
+                        <b
+                          ><span style="color:black; font-size:15px;"
+                            ><b>Dr. Satish Kumar</b></span
+                          ><br />Director<br />NIT Kurukshetra</b
+                        >
+                      </figcaption>
+                    </figure>
+                  </center>
+                </div>
+          
+            </div>
+          </div>
         </div>
-		<div class="col-md-4 col-xs-4 col-sm-4">
-			<center><figure class="figure">
-				<img src="assets/pc.jpg" width=50% class="rounded-circle">
-				<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Pankaj Chandna</span><br>Professor<br> Department of Mechanical Engg<br>NIT Kurukshetra </b></figcaption>
-			</figure></center></div>
-        <div class="col-md-4 col-xs-4 col-sm-4">
-
+        <div class="col">
+          <div class="card">
+            <div class="card-header bg-dark text-white" style="padding:0;padding-top:5px">
+              <h3 style="font-size: 16px"><center>Organizing Chair</center></h3>
+            </div>
+            <div class="card-body">
+           
+                  <center>
+                <div class="col-md-9 col-xs-4 col-sm-4">
+                  <b>
+                    <figure class="figure">
+                      <img
+                        src="assets/pc.jpg"
+                        width="50%"
+                        class="rounded-circle"
+                      />
+                      <figcaption class="figure-caption">
+                        <b
+                          ><span style="color:black; font-size:15px;"
+                            >Dr. Pankaj Chandna</span
+                          ></b><br />Professor<br />
+                          Department of Mechanical Engg NIT Kurukshetra </br>
+                        
+                      </figcaption>
+                    </figure>
+                  </center>
+                </div>
+              
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</div>
-<br>
-<div class="card">
-	<div class="card-header bg-dark text-white"><center><h3>ORGANIZING CO-CHAIRS </h3></center></div>
-	<div class="card-body">
-<div class="row">
-	<div class="col-md-6 col-xs-6 col-sm-6">
-		<center><figure class="figure">
-			<img src="assets/gb.jpg" width=50% class="rounded-circle">
-			<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Gian Bhushan</span><br>Professor<br>  Department of Mechanical Engg<br>NIT Kurukshetra </b></figcaption>
-		</figure></center></div>
-	<div class="col-md-6 col-xs-6 col-sm-6">
-		<center><figure class="figure">
-			<img src="assets/vk.jpg" width=50% class="rounded-circle">
-			<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Vinod Kumar</span><br>Professor<br>  Department of Mechanical Engg<br>NIT Kurukshetra </b></figcaption>
-		</figure></center></div>
-	</div>
-</div>
-</div>
-<br>
-<div class="card">
-	<div class="card-header bg-dark text-white"><center><h3>ORGANIZING SECRETARIES </h3></center></div>
-	<div class="card-body">
-<div class="row">
-	<div class="col-md-6 col-xs-6 col-sm-6">
-		<center><figure class="figure">
-			<img src="assets/gsd.jpg" width=50% class="rounded-circle">
-			<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Gulshan Sachdeva</span><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra </b></figcaption>
-		</figure></center></div>
-	<div class="col-md-6 col-xs-6 col-sm-6">
-		<center><figure class="figure">
-			<img src="assets/r.jpg" width=50% class="rounded-circle">
-			<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Rajneesh </span><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra </b></figcaption>
-		</figure></center></div>
-		<div class="col-md-6 col-xs-6 col-sm-6">
-			<center><figure class="figure">
-				<img src="assets/rk.jpg" width=50% class="rounded-circle">
-				<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Rajesh Kumar</span><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra </b></figcaption>
-			</figure></center></div>
-		<div class="col-md-6 col-xs-6 col-sm-6">
-			<center><figure class="figure">
-				<img src="assets/cs.jpg" width=50% class="rounded-circle">
-				<figcaption class="figure-caption"><b><span style="color:black; font-size:1.5em;">Dr. Chandrashekara M. </span><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra </b></figcaption>
-			</figure></center></div>
-	</div>
-</div>
-</div>
 
-<br><br><hr>
-     <div class="container">
-       <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
-        <ul class="text-center" style="padding:0;">
-          <li><a href="http://www.nitkkr.ac.in/" target="_blank" style="cursor: pointer; color:#23232e;"><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a></li>
-          <li>Under the aegis of </li>
-      <li class="heading"><a href="http://www.combustioninstitute-indiansection.com/"  target="_blank" style="cursor: pointer; color:#23232e;"><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a></li>
-  
-		</ul>
+
+<!-- section2 -->
+
+        <div class="row" style="margin-top: 20px">
+            <div class="col-lg-4 col-sm-12">
+                    <div class="card">
+                            <div class="card-header bg-dark text-white" style="padding:0;padding-top:5px"><center><h3 style="font-size: 16px">Organizing Co-Chairs</h3></center></div>
+                            <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <center><figure class="figure">
+                                    <img src="assets/gb.jpg" width="100px" class="rounded-circle">
+                                    <figcaption class="figure-caption"><b><span style="color:black; font-size:15px;">Dr. Gian Bhushan</span></b><br>Professor<br>  Department of Mechanical Engg<br>NIT Kurukshetra</figcaption>
+                                </figure></center></div>
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <center><figure class="figure">
+                                    <img src="assets/vk.jpg" width="100px" class="rounded-circle">
+                                    <figcaption class="figure-caption"><b><span style="color:black; font-size:15px;">Dr. Vinod Kumar</span></b><br>Professor<br>  Department of Mechanical Engg<br>NIT Kurukshetra </figcaption>
+                                </figure></center></div>
+                            </div>
+                        </div>
+                        </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+
+                    <div class="card">
+                            <div class="card-header bg-dark text-white" style="padding:0;padding-top:5px"><center><h3 style="font-size: 16px">Organizing Secretaries </h3></center></div>
+                            <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 col-sm-6" >
+                                <center><figure class="figure">
+                                    <img src="assets/gsd.jpg" width="100px" class="rounded-circle">
+                                    <figcaption class="figure-caption"><b><span style="color:black; font-size:15px;">Dr. Gulshan Sachdeva</span> </b><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra </figcaption>
+                                </figure></center></div>
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                <center><figure class="figure">
+                                    <img src="assets/r.jpg" width="100px" class="rounded-circle">
+                                    <figcaption class="figure-caption"><b><span style="color:black; font-size:15px;">Dr. Rajneesh </span> </b><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra </figcaption>
+                                </figure></center></div>
+                                <div class="col-md-6 col-xs-6 col-sm-6">
+                                    <center><figure class="figure">
+                                        <img src="assets/rk.jpg" width="100px" class="rounded-circle">
+                                        <figcaption class="figure-caption"><b><span style="color:black; font-size:15px;">Dr. Rajesh Kumar</span> </b><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra </figcaption>
+                                    </figure></center></div>
+                                <div class="col-md-6 col-xs-6 col-sm-6">
+                                    <center><figure class="figure">
+                                        <img src="assets/cs.jpg" width="100px" class="rounded-circle">
+                                        <figcaption class="figure-caption"><b><span style="color:black; font-size:15px;">Dr. Chandrashekara M. </span> </b><br>Asst. Professor <br>  Department of Mechanical Engg<br>NIT Kurukshetra</figcaption>
+                                    </figure></center></div>
+                            </div>
+                        </div>
+                        </div>
+
+
+            </div>
+        </div>
+
 
       </div>
-</div>
+    
+    <!-- Footer -->
+    <br />
+    <hr />
+    <div class="container">
+      <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
+      <ul class="text-center footer-l" style="padding:0;list-style: none">
+        <li>
+          <a
+            href="http://www.nitkkr.ac.in/"
+            target="_blank"
+            style="cursor: pointer; color:#23232e;"
+            ><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a
+          >
+        </li>
+        <li>Under the aegis of</li>
+        <li class="heading">
+          <a
+            href="http://www.combustioninstitute-indiansection.com/"
+            target="_blank"
+            style="cursor: pointer; color:#23232e;"
+            ><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a
+          >
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <div class="footer" style="background: #23232E">
+        <p class="text-center" style="color: #03c9a9;">
+          NCICEC'19 Copyrights &copy; 2019
+        </p>
+      </div>
+    </footer>
 
-<footer style="background-color: #343A40;">
-	<div class="footer">
-		<p class="text-center" style="color: #03c9a9;">NCICEC'19 Copyrights &copy; 2019 </p>
-	</div>
-</footer>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
