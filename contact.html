@@ -1,260 +1,296 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCICEC'19</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NCICEC'19</title>
-  <!-- css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
-
-  <style>
-  .title1{
-      margin-top: 10px;
-      font-size: 25px;
-  }
-  .title1 kbd {
-    color: #03c9a9;
-
-     li{
-      list-style: none;
-      text-align: center;
-  }
-}
-
-    
-
-
-  }
-  .jumbotron {
-    margin: 0;
-  }
-    .footer {
-      background-color: #343A40;
-      padding: 5px;
-      }
-    .cont {
-      margin-top: 10px;
-    }
-    #selected {
-      color: white;
-    }
-    li {
-      list-style: none;
-      text-align: center;
-    }
-
-    #reach {
-     max-width: 100%;
-     height: auto;
-    }
-    .insti-logo{
-      text-align: center;
-    }
-    .sub-text{
-      font-size: 1.2rem;
-    }
-    ul {
-      padding: 0;
-    }
-    #imgReach {
-      width: 100%;
-      height: auto;
-    }
-    }
-    .title kbd {
-    color: #03c9a9;
-
-     li{
-      list-style: none;
-      text-align: center;
-  }
-    }
-      .sub-text{
-      font-size: 1.2rem;
-    }
-
-    .navbar-dark .navbar-brand {
-      color: #03c9a9 !important;
-    }
-    #title{
-      margin-top: 10px;
-      color: #03c9a9;
-    }
- .bg-dark {
-      background-color: #23232e !important;
-    }
-    .navbar-brand .navbar-dark{
-      color: #03c9a9;
-    }
-    .jumbotron{
-      background-color: #23232e !important;
-    }
-    .lead{
-      color: white;
-			font-size: 25px;
-    }
-    .figure-caption {
-      color: #212529;
-    }
-    p{
-      color: #23232e;
-    }
-    kbd{
-      color: #03c9a9;
-    }
-     .heading{
-      text-align: center;
-      font-weight: 500;
-      font-size: 2rem;
-
-    }
-    .img-reach{
-      text-align: center;
-      max-width: 30%;
-      height: auto;
-    }
-  </style>
-
-</head>
-
-<body>
+    <style>
+       .title1{
+           margin-top: 10px;
+           font-size: 25px;
+       }
+       .title1 kbd {
+         color: #03c9a9;
+       }
+          li{
+           list-style: none;
+           text-align: center;
+       }
 
 
-  <!-- NavBar -->
-
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">NCICEC'19</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="importantdates.html">Important Dates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="venue.html">Venue</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="papersub.html">Paper Submission</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="registration.html">Registration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="speakers.html">Plenary Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sponsor.html">Sponsors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="committees.html">Committees</a>
-        </li>
-			  <li class="nav-item">
-          <a class="nav-link" href="CIIS.html">CIIS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html" id="selected">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
 
-  <!-- Hero Img -->
-
-  <div class="jumbotron jumbotron-fluid">
-    <br><br>
-    <div class="container">
-      <div class="row" style="margin-bottom:-4%;">
-        <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-          <center> <img src="assets/ciis2.png" width=150em></center>
-        </div>
-        <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
-          <h3 class="text-center" id="title">National Conference on Internal Combustion Engines and
-          Combustion</h3><center><span style="color:white; font-size:20px;">November 1-4 <span style="color:#03c9a9;">|</span> 2019</span></center>
-          <h4 class="text-center" id="title" style="color:white;">National Institute of Technology Kurukshetra <span style="color:#03c9a9;">|</span> India</h4>
-        </div>
-
-        <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-          <center> <img src="assets/kkrlogo.png" width=150em></center>
-        </div>
-      </div>
-    </div>
-     </div>
 
 
-  <div class="container cont">
-    <h1 class="title text-center "><kbd>Contact</kbd></h1>
+       .jumbotron {
+         margin: 0;
+       }
+         .footer {
+           background-color: #343A40;
+           padding: 5px;
+           }
+         .cont {
+           margin-top: 10px;
+         }
+         #selected {
+           color: white;
+         }
+         li {
+           list-style: none;
+           text-align: center;
+         }
 
-    <div class="row">
-      <div class="col-md-12 col-xs-12 mt-4">
+         #reach {
+          max-width: 100%;
+          height: auto;
+         }
+         .insti-logo{
+           text-align: center;
+         }
+         .sub-text{
+           font-size: 1.2rem;
+         }
+         ul {
+           padding: 0;
+         }
+         #imgReach {
+           width: 100%;
+           height: auto;
+         }
+         }
+         .title kbd {
+         color: #03c9a9;
 
+          li{
+           list-style: none;
+           text-align: center;
+       }
+         }
+           .sub-text{
+           font-size: 1.2rem;
+         }
 
-        <ul style="padding: 5px 0;">
-          <li>Conference Secretariat</li>
-          <li><b>Mechanical Engineering Department </b></li>
-          <li>National Institute of Technology Kurukshetra </li>
-          <li>Kurukshetra-136119, Haryana </li>
-          <li> +91 9996625007; +91 9896913616 </li>
-          <li>ncicec2019@nitkkr.ac.in</li>
-          <li><a href="http://www.ncicec2019.org">www.ncicec2019.org</a></li>
+         .navbar-dark .navbar-brand {
+           color: #03c9a9 !important;
+         }
+         #title{
+           margin-top: 10px;
+           color: #03c9a9;
+         }
+      .bg-dark {
+           background-color: #23232e !important;
+         }
+         .navbar-brand .navbar-dark{
+           color: #03c9a9;
+         }
+         .jumbotron{
+           background-color: #23232e !important;
+         }
+         .lead{
+           color: white;
+      		font-size: 25px;
+         }
+         .figure-caption {
+           color: #212529;
+         }
+         p{
+           color: #23232e;
+         }
+         kbd{
+           color: #03c9a9;
+         }
+          .heading{
+           text-align: center;
+           font-weight: 500;
+           font-size: 2rem;
+
+         }
+         .img-reach{
+           text-align: center;
+           max-width: 30%;
+           height: auto;
+         }
+    </style>
+  </head>
+
+  <body>
+    <!-- NavBar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">NCICEC'19</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="importantdates.html">Important Dates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="venue.html">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="papersub.html">Paper Submission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="speakers.html">Plenary Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsor.html">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="committees.html">Committees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CIIS.html">CIIS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="downloads.html">Downloads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" id="selected">Contact</a>
+          </li>
         </ul>
-
       </div>
+    </nav>
 
-      <div class="col-md-12 lg-12 xs-12 text-center ">
-        <img  class="img-reach" src="./assets/Reach.jpg" alt="ReachNITKKR" id="imgReach">
+    <!-- Hero Img -->
+
+    <div class="jumbotron jumbotron-fluid">
+      <br /><br />
+      <div class="container">
+        <div class="row" style="margin-bottom:-4%;">
+          <div class="col-md-2 col-xs-2" style="margin-top: -3%;">
+            <center><img src="assets/ciis2.png" width="150em" /></center>
+          </div>
+          <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
+            <h3 class="text-center" id="title">
+              National Conference on Internal Combustion Engines and Combustion
+            </h3>
+            <center>
+              <span style="color:white; font-size:20px;"
+                >November 1-4 <span style="color:#03c9a9;">|</span> 2019</span
+              >
+            </center>
+            <h4 class="text-center" id="title" style="color:white;">
+              National Institute of Technology Kurukshetra
+              <span style="color:#03c9a9;">|</span> India
+            </h4>
+          </div>
+
+          <div class="col-md-2 col-xs-2" style="margin-top: -3%;">
+            <center><img src="assets/kkrlogo.png" width="150em" /></center>
+          </div>
+        </div>
       </div>
-
     </div>
-  </div>
 
+    <div class="container cont">
+      <h1 class="title text-center "><kbd>Contact</kbd></h1>
 
-<br><br>
-<br><br><hr>
-     <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 mt-4">
+          <ul style="padding: 5px 0;">
+            <li>Conference Secretariat</li>
+            <li><b>Mechanical Engineering Department </b></li>
+            <li>National Institute of Technology Kurukshetra</li>
+            <li>Kurukshetra-136119, Haryana</li>
+            <li>+91 9996625007; +91 9896913616</li>
+            <li>ncicec2019@nitkkr.ac.in</li>
+            <li><a href="http://www.ncicec2019.org">www.ncicec2019.org</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-12 lg-12 xs-12 text-center ">
+          <img
+            class="img-reach"
+            src="./assets/Reach.jpg"
+            alt="ReachNITKKR"
+            id="imgReach"
+          />
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <br /><br />
+    <hr />
+    <div class="container">
       <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
-        <ul class="text-center" style="padding:0;">
-          <li><a href="http://www.nitkkr.ac.in/" target="_blank" style="cursor: pointer; color:#23232e;"><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a></li>
-          <li>Under the aegis of </li>
-      <li class="heading"><a href="http://www.combustioninstitute-indiansection.com/"  target="_blank" style="cursor: pointer; color:#23232e;"><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a></li>
-         <!-- <<li class="sub-text"><span class="heading">Lorem ipsum dolor sit.</span></li>
+      <ul class="text-center" style="padding:0;">
+        <li>
+          <a
+            href="http://www.nitkkr.ac.in/"
+            target="_blank"
+            style="cursor: pointer; color:#23232e;"
+            ><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a
+          >
+        </li>
+        <li>Under the aegis of</li>
+        <li class="heading">
+          <a
+            href="http://www.combustioninstitute-indiansection.com/"
+            target="_blank"
+            style="cursor: pointer; color:#23232e;"
+            ><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a
+          >
+        </li>
+        <!-- <<li class="sub-text"><span class="heading">Lorem ipsum dolor sit.</span></li>
           <li class="sub-text">Lorem ipsum | Lorem ipsum | Lorem ipsum</li>
 -->
       </ul>
-
-      </div>
-
-  <footer>
-    <div class="footer">
-      <p class="text-center" style="color: #03c9a9;">NCICEC'19 Copyrights &copy; 2019 </p>
     </div>
-  </footer>
 
+    <footer>
+      <div class="footer">
+        <p class="text-center" style="color: #03c9a9;">
+          NCICEC'19 Copyrights &copy; 2019
+        </p>
+      </div>
+    </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

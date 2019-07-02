@@ -1,264 +1,277 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Meta -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NCICEC'19</title>
   <!-- css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/home.css">
-</head>
-<style>
-  .footer {
-      background-color: #343A40;
-      padding: 5px;
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+   td{
+     font-size: 15px;
+   }
+  li{
+   list-style: none;
+   text-align: center;
+}
+  .title kbd {
+
+      color: #03c9a9;
+
       }
-    #selected {
-      color: white;
-    }
-    #title {
-      margin-top:10px;
-      color: #03c9a9;
-    }
-    .title kbd {
-    color: #03c9a9;
+        .sub-text{
+        font-size: 1.2rem;
+      }
 
-     li{
-      list-style: none;
-      text-align: center;
-  }
-    }
+      .navbar-dark .navbar-brand {
+        color: #03c9a9 !important;
+      }
+      #title{
+        margin-top: 10px;
+        color: #03c9a9;
+      }
+   .bg-dark {
+        background-color: #23232e !important;
+      }
+      .navbar-brand .navbar-dark{
+        color: #03c9a9;
+      }
+      .jumbotron{
+        background-color: #23232e !important;
+      }
+      .lead{
+        color: white;
+  			font-size: 25px;
+      }
+      .figure-caption {
+        color: #212529;
+      }
+      p{
+        color: #23232e;
+      }
+      .footer {
+        background-color: #343A40;
+        padding: 5px;
+        }
+      #selected {
+        color: white;
+      }
+
+      .jumbotron {
+        margin-bottom: 0;
+      }
+       .cont {
+        margin-top: 10px;
+      }
+      #selected {
+        color: white;
+      }
+
+
+      #reach {
+       max-width: 100%;
+       height: auto;
+      }
+      .insti-logo{
+        text-align: center;
+      }
       .sub-text{
-      font-size: 1.2rem;
-    }
-    .container li:nth-child(1){
-      text-align: center;
-      font-weight: 500;
-      font-size: 2rem;
-
-    }
-    .navbar-dark .navbar-brand {
-      color: #03c9a9 !important;
-    }
-
- .bg-dark {
-      background-color: #23232e !important;
-    }
-    .navbar-brand .navbar-dark{
+        font-size: 1.2rem;
+      }
+      ul {
+        padding: 0;
+      }
+      #imgReach {
+        width: 100%;
+        height: auto;
+      }
+    h3,a {
       color: #03c9a9;
     }
-    .jumbotron{
-      background-color: #23232e !important;
+    .table{
+      width: 70%;
+      margin: auto;
     }
-    .lead{
-      color: white;
-			font-size: 25px;
+    @media only screen and (max-width:768px){
+      .table{
+      width: 100%;
+      margin: auto
     }
-    .figure-caption {
-      color: #212529;
     }
-    p{
-      color: #23232e;
-    }
-    .resp h1{
-    border: 1px solid red;
-    color: white;
-    margin: 0 auto;
-    max-width: 600px;
-    position: absolute;
-    bottom: 0;
-}
-tr{
-    background-color: #F5F5F5;
-    font-size: 20px;
-    text-indent: 20px;
-    font-weight:500;
-}
-</style>
+  </style>
 
+</head>
 <body>
 
 
-  <!-- NavBar -->
+                                          <!-- NavBar -->
 
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">NCICEC'19</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <a class="navbar-brand" href="index.html">NCICEC'19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
 
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="importantdates.html" id="selected">Important Dates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="venue.html">Venue</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="papersub.html">Paper Submission</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="registration.html">Registration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="speakers.html">Plenary Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sponsor.html">Sponsors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="committees.html">Committees</a>
-        </li>
-			  <li class="nav-item">
+      <li class="nav-item">
+        <a class="nav-link" href="importantdates.html" id="selected">Important Dates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="venue.html">Venue</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="papersub.html">Paper Submission</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="registration.html" >Registration</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="speakers.html">Plenary Speakers</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="sponsor.html">Sponsors</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="committees.html">Committees</a>
+      </li>
+	  	  <li class="nav-item">
           <a class="nav-link" href="CIIS.html">CIIS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-
-  <div class="jumbotron jumbotron-fluid">
-    <br><br>
-    <div class="container">
-      <div class="row" style="margin-bottom:-4%;">
-        <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-          <center> <img src="assets/ciis2.png" width=150em></center>
-        </div>
-        <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
-          <h3 class="text-center" id="title">National Conference on Internal Combustion Engines and
-          Combustion</h3><center><span style="color:white; font-size:20px;">November 1-4 <span style="color:#03c9a9;">|</span> 2019</span></center>
-          <h4 class="text-center" id="title" style="color:white;">National Institute of Technology Kurukshetra <span style="color:#03c9a9;">|</span> India</h4>
-        </div>
-
-        <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-          <center> <img src="assets/kkrlogo.png" width=150em></center>
-        </div>
-      </div>
-    </div>
-     </div>
-  <!-- Home Content -->
-  <div class="container ">
-    <div id="content ">
-      <div class="container align-self-center">
-          <h2 class="resp">Important Dates</h2>
-        <!-- <div class="row">
-          <div class="span7"> -->
-            <div class="table-responsive align-items-center ">
-              <table class="table table-bordered table-hover" style="font-size:15 px">
-
-
-                <tbody>
-                  <tr>
-                    <td>
-                      Full length paper submission commences
-                    </td>
-                    <td>
-                      March 15, 2019
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Deadline for submission of full length paper
-                    </td>
-                    <td>
-                      June 15, 2019<br>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Notification of acceptance of full length paper
-                      <br>
-                    <td>August 31, 2019</td>
-                  </tr>
-
-                  <tr>
-                    <td>Submission of camera ready papers commences</td>
-                    <td>September 01, 2019<br>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>Registration commences</td>
-                    <td>September 01, 2019<br>
-                    </td>
-
-
-                  </tr>
-
-
-
-                </tbody>
-              </table>
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-      </div>
-
-
-    </div>
-
-
+       <li class="nav-item">
+        <a class="nav-link" href="downloads.html">Downloads</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html" >Contact</a>
+      </li>
+    </ul>
   </div>
+</nav>
 
 
-  <br>
-  <br>
-  <br>
-  <br><br><hr>
-       <div class="container">
-        <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
+                              <!-- Hero Img -->
+
+                              <div class="jumbotron jumbotron-fluid">
+                                <br><br>
+                                <div class="container">
+                                  <div class="row" style="margin-bottom:-4%;">
+                                    <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
+                                      <center> <img src="assets/ciis2.png" width=150em></center>
+                                    </div>
+                                    <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
+                                      <h3 class="text-center" id="title">National Conference on Internal Combustion Engines and
+                                      Combustion</h3><center><span style="color:white; font-size:20px;">November 1-4 <span style="color:#03c9a9;">|</span> 2019</span></center>
+                                      <h4 class="text-center" id="title" style="color:white;">National Institute of Technology Kurukshetra <span style="color:#03c9a9;">|</span> India</h4>
+                                    </div>
+
+                                    <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
+                                      <center> <img src="assets/kkrlogo.png" width=150em></center>
+                                    </div>
+                                  </div>
+                                </div>
+                                 </div>
+
+                  <!-- Content -->
+                  <div class="container ">
+                        <div id="content ">
+                          <div class="container align-self-center">
+                              <h2 class="resp text-center" >Important Dates</h2>
+                            <!-- <div class="row">
+                              <div class="span7"> -->
+                                <div class="table-responsive align-items-center table">
+                                  <table class="table table-bordered table-hover" style="font-size:15 px">
+                    
+                    
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          Full length paper submission commences
+                                        </td>
+                                        <td>
+                                          March 15, 2019
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          Deadline for submission of full length paper
+                                        </td>
+                                        <td>
+                                          June 15, 2019<br>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          Notification of acceptance of full length paper
+                                          <br>
+                                        <td>August 31, 2019</td>
+                                      </tr>
+                    
+                                      <tr>
+                                        <td>Submission of camera ready papers commences</td>
+                                        <td>September 01, 2019<br>
+                                        </td>
+                                      </tr>
+                    
+                                      <tr>
+                                        <td>Registration commences</td>
+                                        <td>September 01, 2019<br>
+                                        </td>
+                    
+                    
+                                      </tr>
+                    
+                    
+                    
+                                    </tbody>
+                                  </table>
+                                </div>
+                    
+                    
+                              </div>
+                    
+                    
+                    
+                    
+                            </div>
+                          </div>
+                    
+                    
+                        </div>
+                    
+                    
+                      </div>
+     
+                         <!-- Footer -->
+            <br><hr>
+                 <div class="container">
+                  <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
         <ul class="text-center" style="padding:0;">
           <li><a href="http://www.nitkkr.ac.in/" target="_blank" style="cursor: pointer; color:#23232e;"><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a></li>
           <li>Under the aegis of </li>
       <li class="heading"><a href="http://www.combustioninstitute-indiansection.com/"  target="_blank" style="cursor: pointer; color:#23232e;"><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a></li>
-           <!-- <<li class="sub-text"><span class="heading">Lorem ipsum dolor sit.</span></li>
-            <li class="sub-text">Lorem ipsum | Lorem ipsum | Lorem ipsum</li>
-  -->
-  		</ul>
+         
+            		</ul>
 
-        </div>
-
-
+                  </div>
+<footer>
+  <div class="footer" style="background: #23232E">
+    <p class="text-center" style="color: #03c9a9;">NCICEC'19 Copyrights &copy; 2019 </p>
   </div>
-  <footer>
-    <div class="footer">
-      <p class="text-center" style="color: #03c9a9;">NCICEC'19 Copyrights &copy; 2019 </p>
-    </div>
-  </footer>
+</footer>
 
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>

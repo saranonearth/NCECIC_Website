@@ -1,288 +1,451 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NCICEC'19</title>
-	<!-- css -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/home.css">
-</head>
-<style>
-    .footer {
-      background-color: #343A40;
-      padding: 5px;
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCICEC'19</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      li {
+        list-style: none;
+        text-align: center;
       }
-    #selected {
-      color: white;
-    }
-    
-    .title kbd {
-    color: #03c9a9;
+      .title kbd {
+        color: #03c9a9;
+      }
+      .sub-text {
+        font-size: 1.2rem;
+      }
 
-     li{
-      list-style: none;
-      text-align: center;
-  }
-    }
-      .sub-text{
-      font-size: 1.2rem;
-    }
-    .container li:nth-child(1){
-      text-align: center;
-      font-weight: 500;
-      font-size: 2rem;
+      .navbar-dark .navbar-brand {
+        color: #03c9a9 !important;
+      }
+      #title {
+        margin-top: 10px;
+        color: #03c9a9;
+      }
+      .bg-dark {
+        background-color: #23232e !important;
+      }
+      .navbar-brand .navbar-dark {
+        color: #03c9a9;
+      }
+      .jumbotron {
+        background-color: #23232e !important;
+      }
+      .lead {
+        color: white;
+        font-size: 25px;
+      }
+      .figure-caption {
+        color: #212529;
+      }
+      p {
+        color: #23232e;
+      }
+      .footer {
+        background-color: #343a40;
+        padding: 5px;
+      }
+      #selected {
+        color: white;
+      }
 
-    }
-    .navbar-dark .navbar-brand {
-      color: #03c9a9 !important;
-    }
-    #title{
-      margin-top: 10px;
-      color: #03c9a9;
-    }
- .bg-dark {
-      background-color: #23232e !important;
-    }
-    .navbar-brand .navbar-dark{
-      color: #03c9a9;
-    }
-    .jumbotron{
-      background-color: #23232e !important;
-    }
-    .lead{
-      color: white;
-			font-size: 25px;
-    }
-    .figure-caption {
-      color: #212529;
-    }
-    p{
-      color: #23232e;
-    }
-    h2{
-     color: #03c9a9;
-    }
+      .jumbotron {
+        margin-bottom: 0;
+      }
+      .cont {
+        margin-top: 10px;
+      }
+      #selected {
+        color: white;
+      }
 
-</style>
-<body>
+      #reach {
+        max-width: 100%;
+        height: auto;
+      }
+      .insti-logo {
+        text-align: center;
+      }
+      .sub-text {
+        font-size: 1.2rem;
+      }
+      ul {
+        padding: 0;
+      }
+      #imgReach {
+        width: 100%;
+        height: auto;
+      }
+      h3,
+      a {
+        color: #03c9a9;
+      }
 
+      .block {
+        background-color: #e9ecef;
+        margin-top: 2px;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .block:hover {
+        background-color: #cdcece;
+      }
+      h5 {
+        font-size: 16px;
+      }
+      .card-header {
+        padding: 0;
+        padding-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NavBar -->
 
-                                          <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">NCICEC'19</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">NCICEC'19</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="importantdates.html">Important Dates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="venue.html">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="papersub.html" id="selected"
+              >Paper Submission</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="speakers.html">Plenary Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsor.html">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="committees.html">Committees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CIIS.html">CIIS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="downloads.html">Downloads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <li class="nav-item">
-        <a class="nav-link" href="index.html" >Home</a>
-      </li>
+    <!-- Hero Img -->
 
-      <li class="nav-item">
-        <a class="nav-link" href="importantdates.html">Important Dates</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="venue.html">Venue</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="papersub.html"  id="selected">Paper Submission</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="registration.html">Registration</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="speakers.html">Plenary Speakers</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="sponsor.html">Sponsors</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="committees.html">Committees</a>
-      </li>
-	  	  <li class="nav-item">
-          <a class="nav-link" href="CIIS.html">CIIS</a>
-        </li>
-       <li class="nav-item">
-        <a class="nav-link" href="downloads.html">Downloads</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="jumbotron jumbotron-fluid">
+      <br /><br />
+      <div class="container">
+        <div class="row" style="margin-bottom:-4%;">
+          <div class="col-md-2 col-xs-2" style="margin-top: -3%;">
+            <center><img src="assets/ciis2.png" width="150em" /></center>
+          </div>
+          <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
+            <h3 class="text-center" id="title">
+              National Conference on Internal Combustion Engines and Combustion
+            </h3>
+            <center>
+              <span style="color:white; font-size:20px;"
+                >November 1-4 <span style="color:#03c9a9;">|</span> 2019</span
+              >
+            </center>
+            <h4 class="text-center" id="title" style="color:white;">
+              National Institute of Technology Kurukshetra
+              <span style="color:#03c9a9;">|</span> India
+            </h4>
+          </div>
 
-                                                 <!-- Hero Img -->
-
-												 <div class="jumbotron jumbotron-fluid">
-												   <br><br>
-												   <div class="container">
-													 <div class="row" style="margin-bottom:-4%;">
-													   <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-														 <center> <img src="assets/ciis2.png" width=150em></center>
-													   </div>
-													   <div class="col-md-8 col-xs-8" style="margin-top: -5%;">
-														 <h3 class="text-center" id="title">National Conference on Internal Combustion Engines and
-														 Combustion</h3><center><span style="color:white; font-size:20px;">November 1-4 <span style="color:#03c9a9;">|</span> 2019</span></center>
-														 <h4 class="text-center" id="title" style="color:white;">National Institute of Technology Kurukshetra <span style="color:#03c9a9;">|</span> India</h4>
-													   </div>
-
-													   <div class="col-md-2 col-xs-2"  style="margin-top: -3%;">
-														 <center> <img src="assets/kkrlogo.png" width=150em></center>
-													   </div>
-													 </div>
-												   </div>
-													</div>
-
-                                                 <!-- Home Content -->
-<div class="container">
-<div class="card">
-    <div class="card-header bg-dark text-white">
-        <center><h5 style="color: #03c9a9 ">Call for Papers </h5></center>
-    </div>
-    <div class="card-body">
-	<p style="font-size:15px; text-align:justify;">
-        Faculty members/ research scholars/ scientists from India are invited to submit original unpublished research in the topics mentioned below. Research papers should present novel perspectives within the general scope of the conference. The paper length should not exceed 08 pages. All submitted papers will be subjected to a "Plagiarism check" by Turnitin Software. Papers achieving less than 20% similarity score will only be sent for the formal review. To submit the manuscript, the authors are requested to use the easy chair link (<a href="https://easychair.org/conferences/?conf=ncicec2019">Easy Chair Link</a>). Guidelines for the preparation of the full-length paper and online submission will be soon provided on the conference website.
-     </p>
-</div>
-
-<div class="card">
-    <div class="card-header bg-dark text-white">
-        <center><h5 style="color: #03c9a9 ">Submission Guidelines</h5></center>
-    </div>
-    <div class="card-body">
-	<p style="font-size:15px; text-align:justify;">
-        All papers must be original and not simultaneously submitted to another journal or conference. All papers will be reviewed by Technical Review Committee members and other experts active in the field to ensure high quality and relevance to the conference. Submissions should include title, abstract, 5-10 keywords, and be in PDF format. Each submission must not exceed 8 pages in the Springer publications format with 10 point font, including tables, figures, and references. All submitted papers will be subjected to a "Plagiarism check" by Turnitin Software. Papers achieving less than 20% similarity score will only be sent for the formal review.
- </p>
-</div>
-
-    </div>
-    <div class="card">
-        <div class="card-header bg-dark text-white">
-<center><h5 style="color: #03c9a9 ">Conference Themes </h5></center>
+          <div class="col-md-2 col-xs-2" style="margin-top: -3%;">
+            <center><img src="assets/kkrlogo.png" width="150em" /></center>
+          </div>
         </div>
-<div class="card-body">
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Aerospace combustion</div>
-    <div class="block col-sm-12 col-lg-6">&bull; Laminar premixed and diffusion ﬂames </div>
+      </div>
     </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Air breathing engines </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Material synthesis </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Bio-fuel cook-stoves </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Ignition  </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Carbon sequestration </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Mechanism reduction </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Chemical kinetics</div>
-    <div class="block col-sm-12 col-lg-6">&bull; Methanol economy  </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Combustion dynamics and instabilities </div>
-    <div class="block col-sm-12 col-lg-6">&bull; New combustion technologies  </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Detonations, explosions, and supersonic combustion </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Numerical methods for reacting ﬂows </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Diagnostics </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Quenching </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Droplet evaporation and burning</div>
-    <div class="block col-sm-12 col-lg-6">&bull; Real gases, supercritical combustion </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Exhaust emissions </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Software engineering for combustion applications, code coupling</div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Fire Research </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Solid Fuel Combustion </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Gas turbine and rocket engine combustion </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Spray, droplet, and supercritical combustion </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; HCCI/PCCI</div>
-    <div class="block col-sm-12 col-lg-6">&bull; Stationary combustion systems  </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; Heterogeneous combustion </div>
-    <div class="block col-sm-12 col-lg-6">&bull; Supersonic combustion  </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; High ash content coal gasiﬁcation</div>
-    <div class="block col-sm-12 col-lg-6">&bull; Turbulent ﬂames </div>
-    </div>
-    <div class=" row">
-    <div class="block col-sm-12 col-lg-6">&bull; High performance computing of combustion applications </div>
-    <div class="block col-sm-12 col-lg-6">  </div>
-    </div>
-</div>
-<div class="card-footer">
-    <center><b>Any peripheral area having its application in IC Engines and combustion </b></center>
 
+    <!-- Content -->
+    <div class="container" style="margin-top:20px">
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          <center><h5 style="color: #03c9a9 ">Call for Papers</h5></center>
+        </div>
+        <div class="card-body">
+          <p style="font-size:13px; text-align:justify;">
+            Faculty members/ research scholars/ scientists from India are
+            invited to submit original unpublished research in the topics
+            mentioned below. Research papers should present novel perspectives
+            within the general scope of the conference. The paper length should
+            not exceed 08 pages. All submitted papers will be subjected to a
+            "Plagiarism check" by Turnitin Software. Papers achieving less than
+            20% similarity score will only be sent for the formal review. To
+            submit the manuscript, the authors are requested to use the easy
+            chair link (<a
+              href="https://easychair.org/conferences/?conf=ncicec2019"
+              >Easy Chair Link</a
+            >). Guidelines for the preparation of the full-length paper and
+            online submission will be soon provided on the conference website.
+          </p>
+        </div>
 
-
-
-</div>
-</div>
-<br>
-<div class="card">
-    <div class="card-header bg-dark text-white">
-        <center><h5 style="color: #03c9a9 ">Important Mention</h5></center>
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <center>
+              <h5 style="color: #03c9a9 ">Submission Guidelines</h5>
+            </center>
+          </div>
+          <div class="card-body">
+            <p style="font-size:13px; text-align:justify;">
+              All papers must be original and not simultaneously submitted to
+              another journal or conference. All papers will be reviewed by
+              Technical Review Committee members and other experts active in the
+              field to ensure high quality and relevance to the conference.
+              Submissions should include title, abstract, 5-10 keywords, and be
+              in PDF format. Each submission must not exceed 8 pages in the
+              Springer publications format with 10 point font, including tables,
+              figures, and references. All submitted papers will be subjected to
+              a "Plagiarism check" by Turnitin Software. Papers achieving less
+              than 20% similarity score will only be sent for the formal review.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <center><h5 style="color: #03c9a9 ">Conference Themes</h5></center>
+          </div>
+          <div class="card-body">
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Aerospace combustion
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Laminar premixed and diffusion ﬂames
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Air breathing engines
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Material synthesis
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Bio-fuel cook-stoves
+              </div>
+              <div class="block col-sm-12 col-lg-6">&bull; Ignition</div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Carbon sequestration
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Mechanism reduction
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Chemical kinetics
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Methanol economy
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Combustion dynamics and instabilities
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; New combustion technologies
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Detonations, explosions, and supersonic combustion
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Numerical methods for reacting ﬂows
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">&bull; Diagnostics</div>
+              <div class="block col-sm-12 col-lg-6">&bull; Quenching</div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Droplet evaporation and burning
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Real gases, supercritical combustion
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Exhaust emissions
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Software engineering for combustion applications, code
+                coupling
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">&bull; Fire Research</div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Solid Fuel Combustion
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Gas turbine and rocket engine combustion
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Spray, droplet, and supercritical combustion
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">&bull; HCCI/PCCI</div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Stationary combustion systems
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Heterogeneous combustion
+              </div>
+              <div class="block col-sm-12 col-lg-6">
+                &bull; Supersonic combustion
+              </div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; High ash content coal gasiﬁcation
+              </div>
+              <div class="block col-sm-12 col-lg-6">&bull; Turbulent ﬂames</div>
+            </div>
+            <div class=" row">
+              <div class="block col-sm-12 col-lg-6">
+                &bull; High performance computing of combustion applications
+              </div>
+              <div class="block col-sm-12 col-lg-6"></div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <center>
+              <b
+                >Any peripheral area having its application in IC Engines and
+                combustion
+              </b>
+            </center>
+          </div>
+        </div>
+        <br />
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <center><h5 style="color: #03c9a9 ">Important Mention</h5></center>
+          </div>
+          <div class="card-body">
+            <p style="font-size:13px; text-align:justify;">
+              All peer reviewed and accepted papers of NCICEC 2019 will be sent
+              for publication in SCOPUS indexed conference proceedings with
+              Springer. Review papers will be considered for oral presentations
+              only. Kindly visit the conference website (<a
+                href="http://ncicec2019.org"
+                >www.ncicec2019.org</a
+              >) for latest updates and information regarding publication
+              partners.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-body">
-	<p style="font-size:15px; text-align:justify;">
-        All peer reviewed and accepted papers of NCICEC 2019 will be sent for publication in SCOPUS indexed conference proceedings with Springer. Review papers will be considered for oral presentations only. Kindly visit the conference website (<a href="http://ncicec2019.org">www.ncicec2019.org</a>) for latest updates and information regarding publication partners.
-    </p>
-</div>
 
-</div>
-</div>
-</div>
-<br><br>
+    <!-- Footer -->
+    <br />
+    <hr />
+    <div class="container">
+      <h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
+      <ul class="text-center" style="padding:0;">
+        <li>
+          <a
+            href="http://www.nitkkr.ac.in/"
+            target="_blank"
+            style="cursor: pointer; color:#23232e;"
+            ><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a
+          >
+        </li>
+        <li>Under the aegis of</li>
+        <li class="heading">
+          <a
+            href="http://www.combustioninstitute-indiansection.com/"
+            target="_blank"
+            style="cursor: pointer; color:#23232e;"
+            ><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a
+          >
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <div class="footer" style="background: #23232E">
+        <p class="text-center" style="color: #03c9a9;">
+          NCICEC'19 Copyrights &copy; 2019
+        </p>
+      </div>
+    </footer>
 
-<br><br><hr>
-	 <div class="container">
-	<h4 class="title text-center"><kbd>ORGANISED BY</kbd></h4>
-        <ul class="text-center" style="padding:0;">
-          <li><a href="http://www.nitkkr.ac.in/" target="_blank" style="cursor: pointer; color:#23232e;"><h6><b>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</b></h6></a></li>
-          <li>Under the aegis of </li>
-      <li class="heading"><a href="http://www.combustioninstitute-indiansection.com/"  target="_blank" style="cursor: pointer; color:#23232e;"><h6>THE COMBUSTION INSTITUTE- INDIAN SECTION (CIIS)</h6></a></li>
-		 <!-- <<li class="sub-text"><span class="heading">Lorem ipsum dolor sit.</span></li>
-		  <li class="sub-text">Lorem ipsum | Lorem ipsum | Lorem ipsum</li>
--->
-	   </ul>
-
-	  </div>
-<footer>
-	<div class="footer">
-		<p class="text-center " style="color: #03c9a9;">NCICEC'19 Copyrights &copy; 2019 </p>
-	</div>
-</footer>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
